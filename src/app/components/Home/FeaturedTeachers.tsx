@@ -20,7 +20,7 @@ export default function FeaturedTeachers() {
   const [error, setError] = useState<string | null>(null);
 
   // استخدام صورة افتراضية في حالة عدم وجود الصورة
-  const defaultImage = "https://via.placeholder.com/150";
+  const defaultImage = "https://cdn-icons-png.flaticon.com/512/3135/3135715.png";
 
   // جلب بيانات المعلمين المميزين من الباكاند باستخدام خدمة الصفحة الرئيسية
   useEffect(() => {

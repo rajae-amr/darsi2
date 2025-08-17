@@ -14,6 +14,11 @@ const nextConfig: NextConfig = {
         hostname: '*.pythonanywhere.com',
         pathname: '/media/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'cdn-icons-png.flaticon.com',
+        pathname: '/512/**',
+      },
     ],
   },
   // تعطيل ESLint في وقت البناء لتجنب فشل البناء بسبب أخطاء ESLint

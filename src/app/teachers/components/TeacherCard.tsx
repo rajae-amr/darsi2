@@ -83,7 +83,7 @@ export default function TeacherCard({ teacher, searchQuery, activeFilters }: Tea
             {teacher.profile_image ? (
               <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-md">
                 <Image 
-                  src={teacher.profile_image} 
+                  src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png' 
                   alt={`صورة ${teacher.display_name}`} 
                   width={128}
                   height={128}
