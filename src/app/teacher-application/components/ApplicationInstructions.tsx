@@ -62,6 +62,12 @@ export default function ApplicationInstructions() {
           <strong>ملاحظة هامة:</strong> بعد الموافقة على طلبك، سيتم إنشاء حساب معلم خاص بك وإرسال بيانات الدخول إلى بريدك الإلكتروني. يرجى التحقق من البريد الوارد وكذلك مجلد البريد غير المرغوب فيه (Spam) بعد الموافقة على طلبك.
         </Typography>
       </Alert>
+
+      <Alert severity="info" sx={{ mt: 2 }}>
+        <Typography variant="body2">
+          <strong>تنويه:</strong> سيتم الرد على طلبك بعد مراجعة جميع الطلبات المقدمة، وقد يستغرق ذلك حتى <strong>7 أيام عمل</strong>.
+        </Typography>
+      </Alert>
     </Paper>
   );
 }

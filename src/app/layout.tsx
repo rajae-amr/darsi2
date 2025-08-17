@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TeachSpace - منصة المعلمين",
-  description: "منصة تعليمية لإنشاء مواقع للمعلمين بدون معرفة تقنية",
+  title: "Darsi - منصة درسي",
+  description: "Darsi - منصة درسي",
 };
 
 export default function RootLayout({
