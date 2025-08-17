@@ -1,0 +1,101 @@
+@import "tailwindcss";
+@import "./styles/colors.css";
+@import "./styles/components.css";
+
+/* يتم استيراد الخطوط الآن من خلال ملف fonts.ts */
+
+/* تعريف المتغيرات العامة للتطبيق */
+:root {
+  /* متغيرات الخلفية والنصوص */
+  --background: var(--color-background-light);
+  --foreground: var(--color-gray-800);
+  
+  /* متغيرات الخطوط */
+  --font-mono: var(--font-geist-mono), 'Consolas', monospace;
+  --font-sans: 'Tajawal', 'Almarai', system-ui, sans-serif;
+  
+  /* متغيرات التطبيق */
+  --app-background: var(--background);
+  --app-foreground: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--color-background-dark);
+    --foreground: var(--color-gray-100);
+  }
+}
+
+/* تطبيق الأنماط الأساسية */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Tajawal', 'Almarai', system-ui, sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: right;
+
+}
+
+/* تطبيق خط Cairo للعناوين */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cairo', system-ui, sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: right;
+}
+
+/* تنسيق عام للروابط */
+a {
+  color: var(--color-blue-500);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--color-blue-700);
+  text-decoration: underline;
+}
+
+/* تنسيق القوائم */
+ul, ol {
+  padding-right: 1.5rem;
+  padding-left: 0;
+}
+
+[dir="ltr"] ul,
+[dir="rtl"] ol {
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+
+/* تنسيق الحاويات */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* تنسيق الشبكة */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* تنسيق الصفوف */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.col {
+  flex: 1 0 0%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
