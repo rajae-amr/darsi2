@@ -10,22 +10,21 @@ interface TeacherBasicInfoProps {
  * مكون معلومات المدرس الأساسية
  */
 export default function TeacherBasicInfo({ teacher }: TeacherBasicInfoProps) {
+
+  const defaultImage = "https://cdn-icons-png.flaticon.com/512/3135/3135715.png";
+
   return (
     <div className="bg-blue-50 dark:bg-blue-900 p-6 rounded-2xl shadow-md flex flex-col md:flex-row items-center gap-6">
       {/* صورة المدرس */}
       <div className="relative w-32 h-32">
-        {teacher.profile_image ? (
+      
           <Image
-            src={teacher.profile_image}
+            src={defaultImage}
             alt={`صورة ${teacher.display_name}`}
             className="rounded-full object-cover"
             fill
           />
-        ) : (
-          <div className="w-32 h-32 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 text-4xl">
-            {teacher.display_name.charAt(0)}
-          </div>
-        )}
+   
       </div>
 
       {/* معلومات المدرس */}
