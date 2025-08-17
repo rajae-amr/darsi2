@@ -110,11 +110,9 @@ export default function FeaturedTeachers() {
               <CardBody className="flex flex-col h-full">
                 <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-50 z-10"></div>
-                 const imageSrc = teacher.profile_image
-      
-                  ? {teacher.profile_image}  : defaultImage;
+   
                   <Image
-                    src={imageSrc}
+                    src={defaultImage}
                     alt={teacher.display_name}
                     fill
                     style={{ objectFit: "cover" }}
