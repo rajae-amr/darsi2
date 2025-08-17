@@ -6,10 +6,10 @@
 // عنوان API الأساسي
 // تم توحيد عنوان API في جميع أنحاء التطبيق
 // يمكن أن يكون إما http://localhost:8000 أو http://localhost:8000/api حسب تكوين الباك إند
-export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
+export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ac09fa7b387b.ngrok-free.app/api';
 
 // عنوان API الأساسي بدون /api (يستخدم للصور وموارد أخرى)
-export const API_ROOT_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+export const API_ROOT_URL = process.env.NEXT_PUBLIC_API_URL || 'https://ac09fa7b387b.ngrok-free.app';
 
 // فترات زمنية للطلبات (بالمللي ثانية)
 export const API_TIMEOUT = 30000; // 30 ثانية
