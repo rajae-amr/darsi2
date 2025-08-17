@@ -110,16 +110,14 @@ export default function FeaturedTeachers() {
               <CardBody className="flex flex-col h-full">
                 <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-50 z-10"></div>
-                  <Image 
-                    src={getFullImageUrl(teacher.profile_image)} 
+                 const imageSrc = teacher.profile_image
+      
+                  ? getFullImageUrl(teacher.profile_image)  : defaultImage;
+                  <Image
+                    src={imageSrc}
                     alt={teacher.display_name}
                     fill
-                    style={{ objectFit: 'cover' }}
-                    onError={(e) => {
-                      // استخدام صورة افتراضية في حالة فشل تحميل الصورة
-                      const target = e.target as HTMLImageElement;
-                      target.src = defaultImage;
-                    }}
+                    style={{ objectFit: "cover" }}
                   />
                   {/* عرض التقييم إذا كان متاحاً */}
                   {teacher.teacher_profile && teacher.teacher_profile.average_rating !== null && (
