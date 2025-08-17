@@ -112,7 +112,7 @@ export default function FeaturedTeachers() {
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-50 z-10"></div>
                  const imageSrc = teacher.profile_image
       
-                  ? getFullImageUrl(teacher.profile_image)  : defaultImage;
+                  ? {teacher.profile_image}  : defaultImage;
                   <Image
                     src={imageSrc}
                     alt={teacher.display_name}
