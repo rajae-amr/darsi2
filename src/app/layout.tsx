@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Darsi - منصة درسي",
-  description: "Darsi - منصة درسي",
+  description: "Darsi platform - منصة درسي",
 };
 
 export default function RootLayout({
